@@ -16,6 +16,18 @@
       font-family: titleFont;
       src: url(../fonts/DragonHunter-9Ynxj.otf)
     }
+    .gameTitle{
+  background-image: url(Images/title\ text\ background.jpg);
+  }
+  .pageBackgroundHidden {
+    
+    
+    transition: visibility 5s ease;
+    visibility: hidden;
+   
+   
+  
+  }
   </style>
     
     
@@ -32,8 +44,8 @@
       <img style="width: 1000px; height: 500px;" src="Images/HomePageBorder.jpg" alt="BORDER">
 
       
-
-      <div class="pageBackground">
+    
+      <div class="pageBackground" id="pageBackground">
         <div class="homePage">
           <div class="titleHomePage">
             <p id="firstTitle" class="gameTitle" >DEFEAT </p>
@@ -43,7 +55,11 @@
           
           <div class="homePageButtons">
 
-            <button id="startButton" class="startButton">
+            <button id="startButton" class="startButton" 
+            onclick=" document.querySelector('.pageBackground').classList.add('pageBackgroundHidden')
+            document.querySelector('.fade').classList.add('fadeIn')  ">
+
+
               <span id="startButton" class="glowStart"> START </span> 
              </button>
     
@@ -89,6 +105,9 @@
 
           </div>
          
+      </div>
+      <div class="fade">
+          <p style="color: white;">Tang Ina mo</p>
       </div>
     </div>
   </div>
