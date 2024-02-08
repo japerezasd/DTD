@@ -29,7 +29,7 @@
   border-style: solid;
   border-image: linear-gradient(to right, rgb(255, 145, 0), rgb(245, 190, 8)) 1;
   font-family:titleFont ;
-  background-image: url(/Images/title\ text\ background.jpg);
+  background-image: url(Images/title\ text\ background.jpg);
   font-size: 15px;
   font-weight: bolder;
 }.exitStart:active {
