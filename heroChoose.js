@@ -7,11 +7,11 @@ function heroPick(hero) {
   const heroChosen = document.querySelector('.heroPicked');
 
   if (hero === 'reymart') {
-    heroChosen = document.querySelector('.heroPicked').innerHTML='You Pick the Happy Monster'
+    heroChosen = document.querySelector('.heroPicked').innerHTML='You Pick the Indigenous Man'
   }else if (hero === 'patria') {
     heroChosen = document.querySelector('.heroPicked').innerHTML='You Pick the Double banger'
   }else {
-    heroChosen = document.querySelector('.heroPicked').innerHTML='You Pick Wonderful Joy Man'
+    heroChosen = document.querySelector('.heroPicked').innerHTML='You Pick the Happy Warrior'
   }
 
   
