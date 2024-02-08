@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="text.css">
   <link rel="stylesheet" href="optionTab.css">
   <link rel="stylesheet" href="start.css">
+  <link rel="stylesheet" href="heroChoose.css">
   <style>
     @font-face {
       font-family: textFont;
@@ -17,18 +18,7 @@
       font-family: titleFont;
       src: url(fonts/DragonHunter-9Ynxj.otf)
     }
-    .gameTitle{
-  background-image: url(Images/title\ text\ background.jpg);
-  }
-  .pageBackgroundHidden {
-    
-    
-    transition: visibility 5s ease;
-    visibility: hidden;
-   
-   
   
-  }
   </style>
     
     
@@ -42,7 +32,10 @@
   <div class="mainBox">
 
     <div class="pageBorder">
-      <img style="width: 1000px; height: 500px;" src="Images/HomePageBorder.jpg" alt="BORDER">
+      <div class="pictureBorder">
+        <img style="width: 1000px; height: 500px;" src="Images/HomePageBorder.jpg" alt="BORDER">
+      </div>
+      
 
   
     
@@ -57,10 +50,8 @@
           <div class="homePageButtons">
 
             <button id="startButton" class="startButton" 
-            onclick=" document.querySelector('.pageBackground').classList.add('pageBackgroundHidden')
-            document.querySelector('.fade').classList.add('fadeIn');
-            audio.play();
-            
+            onclick=" 
+            startGame();
             ">
 
 
@@ -113,6 +104,7 @@
 
 
 
+      
       <div class="fade">
           <button class="exitStart"  onclick="
 
@@ -121,17 +113,42 @@
             
             
             "  >Main Menu</button>
-          
-          <img src="Images/patria.png" alt="" class="patria">
+            <p class="chooseHeroText"> Choose Your Hero</p>
+           
+                <img src="Images/reymart.jpg" alt="" class="reymart allPicture" onclick="
+                heroPick('reymart');
+                audio.play();
+              ">
+                <img src="Images/patria.png" alt="" class="patria allPicture" onclick="
+                heroPick('patria');
+                audio.play();
+              ">
+                <img src="Images/russell.jpg" alt="" class="russell allPicture" onclick="
+                heroPick('russell');
+                audio.play();
+              ">
+
+              
       </div>
-    </div>
+
+
+      <div class="heroChosen">
+
+        <p class="heroPicked"></p>
+        <button class="continueButton" onclick="
+        exitChosenHeroText()
+        audio.play();
+        ">Continue</button>
+
+      </div>
+</div>
   </div>
- 
   
   <script src="option.js"></script>
    <script src="homePage.js"></script>
   <script src="sounds.js"></script>
   <script src="start.js"></script>
+  <script src="heroChoose.js"></script>
   
 </body>
 </html>

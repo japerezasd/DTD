@@ -1,0 +1,51 @@
+.heroScreen {
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 860px;
+  height: 400px;
+  background-color: black;
+  transition: background-color 0.3s ease;
+}.heroPicked {
+  
+  position: absolute;
+  top: 130px;
+  left: 110px;
+  font-family: titleFont;
+  font-size: 40px;
+  font-weight: bolder;
+  background-image: url(Images/title\ text\ background.jpg);
+  background-clip: text;
+  color: transparent;
+  visibility: hidden;
+  transition: visibility 2s ease;
+}.heroPickedShow {
+  visibility: visible;
+}.closeChosenHeroText {
+  transition: visibility 2s;
+  visibility: hidden;
+}.continueButton {
+  pointer-events: all;
+  cursor: url('curser/clickCurser.png'), auto;
+  position: absolute;
+  bottom: 45%;
+  right: 45%;
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgb(255, 145, 0), rgb(245, 190, 8)) 1;
+  font-family:titleFont ;
+  background-image: url(Images/title\ text\ background.jpg);
+  font-size: 15px;
+  font-weight: bolder;
+  visibility: hidden;
+  transition: visibility 2s;
+}.continueButton:active {
+  scale: 0.9;
+}
+.continueButtonShow{
+
+  visibility: visible;
+}

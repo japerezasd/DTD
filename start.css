@@ -1,7 +1,7 @@
 .fade {
   position: absolute;
   top: 10%;
-  left: 72%;
+  left: 7%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,17 +11,23 @@
   transition: background-color 3s ease;
   /**/
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   opacity: 0;
-  transition: opacity 2s;
-  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 1s , visibility 0.5s;
+  
+
 }.fadeIn {
   opacity: 1;
-  transition: opacity 3s;
+  transition: opacity 1s;
+  visibility: visible ;
+  
+  
+  
 }.exitStart {
   pointer-events: all;
-  cursor: url(curser/curser.png), auto;
+  cursor: url('curser/clickCurser.png'), auto;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -36,6 +42,22 @@
   transform: scale(0.9);
 }
 /**/
-.patria {
-  width: 200px;
+.allPicture {
+  width: 150px;
+  height: 240px;
+  border-radius: 20px;
+  margin-top: 60px;
+  cursor: url('curser/clickCurser.png'), auto;
+ 
+}.allPicture:active {
+  scale: 0.9;
+}.chooseHeroText {
+  position: absolute;
+  top: 50px;
+  font-family: titleFont;
+  font-size: 50px;
+  font-weight: bolder;
+  background-image: url(Images/title\ text\ background.jpg);
+  background-clip: text;
+  color: transparent;
 }
