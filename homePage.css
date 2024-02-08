@@ -13,20 +13,19 @@
   z-index: 0;
 }.pageBackground {
   position: absolute;
-  
   top: 10%;
   left: 72%;
-  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 860px;
   height: 400px;
- 
-  z-index: 100;
+  
+  background-image: url(Images/HomePagePicture.jpg);
+  
 }.titleHomePage {
   display: flex;
-  justify-content: center;
+  justify-content: center;  
   align-items: center;
   
   position: absolute;
@@ -73,10 +72,22 @@
   left: 7%;
 }.homePageClose{
   visibility: hidden;
+
+}.fade {
+  position: absolute;
+  top: 10%;
+  left: 72%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 860px;
+  height: 400px;
+  background-color: black;
+  transition: background-color 3s ease;
+  opacity: 0;
+  pointer-events: none;
+}.fadeIn {
+  opacity: 1;
+  transition: opacity 3s;
 }
 
-.gameTitle{
-  background-image: url(Images/title\ text\ background.jpg);
-}.pageBackground{
-  background-image: url(Images/HomePagePicture.jpg);
-}
