@@ -1,0 +1,18 @@
+.glowStart {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  animation: glowStart 1s ease-in-out infinite alternate;
+ 
+  
+}
+
+  @-webkit-keyframes glowStart {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f3f717, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fa8a21, 0 0 40px #fa8a21, 0 0 50px #fa8a21, 0 0 60px #fa8a21, 0 0 70px #fa8a21, 0 0 80px #fa8a21;
+  }
+}

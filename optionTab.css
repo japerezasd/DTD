@@ -1,0 +1,76 @@
+.openOption {
+  visibility: hidden;
+  }.showHomePage{
+  visibility: visible;
+  
+}.optionTab {
+  visibility:hidden ;
+  position: relative;
+  left: 80%;
+  top: 10%; 
+  
+}.optionTabShow{
+  visibility: visible;
+  
+}.removeOptionTab {
+  visibility: hidden;
+}.closeOptionButton {
+  border: none;
+  border-radius: 20px;
+  background-image: url(../Images/title\ text\ background.jpg);
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  cursor: url('../curser/clickCurser.png'), auto;
+}.optionMenu {
+  position: absolute;
+  left: -500px;
+  top:30px;
+  background-color: black;
+  height: 300px;
+  width: 500px;
+}.settingText{
+  left: -350px;
+  top: -20px;
+  font-size: 30px;
+  position: absolute;
+  font-size: 40px;
+  font-family: textFont;
+  border: none;
+  background: none;
+
+  letter-spacing: 5px;
+  background-image: linear-gradient(50deg, #f1bc76, #9e3f00);
+  background-clip: text;
+  color: transparent;
+}.num {
+  font-weight: bolder;
+  font-size: 24px;
+ 
+  background-image: linear-gradient(50deg, #f1bc76, #9e3f00);
+  background-clip: text;
+  color: transparent;
+  position: absolute;
+  left: -250px;
+  top: 75px;
+}.textVolume {
+  position: absolute;
+  left: -450px;
+  top:93px;
+}.volumeSlider {
+  -webkit-appearance: none;
+  position: absolute;
+  right: 115.80%;
+  top: 100px;
+  cursor: url('../curser/clickCurser.png'), auto;
+  height: 20px;
+  width: 200px;
+  background-color: black;
+  border: solid 1px red;
+ 
+}.volumeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  background-image: url(../Images/title\ text\ background.jpg);
+}
