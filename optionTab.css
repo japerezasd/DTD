@@ -4,12 +4,15 @@
   visibility: visible;
   
 }.optionTab {
+
+  
   visibility:hidden ;
   position: relative;
   left: 80%;
   top: 10%; 
   
 }.optionTabShow{
+  
   visibility: visible;
   
 }.removeOptionTab {

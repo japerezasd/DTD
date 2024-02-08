@@ -4,10 +4,6 @@ function openOption() {
   document.querySelector('.optionTab').classList.add('optionTabShow');
 
 }
-function closeOptionTab() {
-  document.querySelector('.optionTab').classList.remove('optionTabShow');
+ function closeGame() {
 
-  document.querySelector('.homePage').classList.remove('openOption');
-
-  
-} 
+}

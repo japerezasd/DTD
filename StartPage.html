@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="general.css">
   <link rel="stylesheet" href="text.css">
   <link rel="stylesheet" href="optionTab.css">
+  <link rel="stylesheet" href="start.css">
   <style>
     @font-face {
       font-family: textFont;
@@ -43,7 +44,7 @@
     <div class="pageBorder">
       <img style="width: 1000px; height: 500px;" src="Images/HomePageBorder.jpg" alt="BORDER">
 
-      
+  
     
       <div class="pageBackground" id="pageBackground">
         <div class="homePage">
@@ -57,7 +58,10 @@
 
             <button id="startButton" class="startButton" 
             onclick=" document.querySelector('.pageBackground').classList.add('pageBackgroundHidden')
-            document.querySelector('.fade').classList.add('fadeIn')  ">
+            document.querySelector('.fade').classList.add('fadeIn');
+            audio.play();
+            
+            ">
 
 
               <span id="startButton" class="glowStart"> START </span> 
@@ -106,19 +110,26 @@
           </div>
          
       </div>
+
+
+
       <div class="fade">
+          <button class="exitStart"  onclick="
+
+            mainMenu();
+            
+            
+            "  >Main Menu</button>
           <p style="color: white;">Tang Ina mo</p>
       </div>
     </div>
   </div>
  
   
-  <script src="option.js">
-  </script>
+  <script src="option.js"></script>
    <script src="homePage.js"></script>
-  <script src="sounds.js">
-  
-  </script>
+  <script src="sounds.js"></script>
+  <script src="start.js"></script>
   
 </body>
 </html>
