@@ -12,6 +12,8 @@ function closeOptionTab() {
   
   setTimeout(function(){
     document.querySelector('.pageBackground').classList.add('pageBackgroundShow')
+    audioMusicBg.play();
+
   }, 5000)
 
  
