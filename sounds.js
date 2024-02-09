@@ -13,6 +13,8 @@ vol.oninput = function(){
   num.innerHTML=vol.value;
 }
 
+const audioStartContinue = new Audio()
+audioStartContinue.src= "audio/whoosh.mp3"
 
 const audioStats = new Audio();
 audioStats.src="audio/match-61050.mp3";

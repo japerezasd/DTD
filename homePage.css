@@ -28,16 +28,14 @@
 }.pageBackgroundShow {
   visibility: visible;
   opacity: 1;
-  transition: opacity 2s;
+  transition: opacity 6s;
   
   
 }
 
 
 
-.firstSceneBg{
-  background-color: black;
-}
+
 .firstScene {
   position: absolute;
   top: 10%;
@@ -54,8 +52,7 @@
   justify-content: center;
   flex-direction: column;
 }.continueStartHide {
-  opacity: 0;
-  transition: opacity 3s;
+  visibility: hidden;
 }.logo {
   font-size: 100px;
   font-weight: bolder;

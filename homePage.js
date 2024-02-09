@@ -5,12 +5,16 @@ function closeOptionTab() {
 
   
 } function clickAnywhere() {
+  document.querySelector('.logo').classList.add('continueStartHide')
+
   document.querySelector('.continueStart').classList.add('continueStartHide')
  
-  document.querySelector('.logo').classList.add('continueStartHide')
   
+  setTimeout(function(){
+    document.querySelector('.pageBackground').classList.add('pageBackgroundShow')
+  }, 5000)
 
- document.querySelector('.pageBackground').classList.add('pageBackgroundShow')
+ 
 
  
 }
