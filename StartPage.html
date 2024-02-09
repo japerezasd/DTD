@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="optionTab.css">
   <link rel="stylesheet" href="start.css">
   <link rel="stylesheet" href="heroChoose.css">
+  <link rel="stylesheet" href="stats.css">
   <style>
     @font-face {
       font-family: textFont;
@@ -20,25 +21,29 @@
     }
   
   </style>
+
+
     
     
   
 </head>
 <body>
-  
-  
 
+  
+  
+  
 
   <div class="mainBox">
+    <audio autoplay="" loop class="audioMusicBg"
+  src="audio/Infinite-World-chosic.com_.mp3">
+  </audio>
 
     <div class="pageBorder">
+
       <div class="pictureBorder">
         <img style="width: 1000px; height: 500px;" src="Images/HomePageBorder.jpg" alt="BORDER">
       </div>
       
-
-  
-    
       <div class="pageBackground" id="pageBackground">
         <div class="homePage">
           <div class="titleHomePage">
@@ -50,25 +55,27 @@
           <div class="homePageButtons">
 
             <button id="startButton" class="startButton" 
-            onclick=" 
+            onclick="
+            
             startGame();
+            audioClick.play();
             ">
-
-
               <span id="startButton" class="glowStart"> START </span> 
              </button>
     
              <button  id="startButton" class="optionButton">
               <span id="optionButton" class="glowStart optionButton" onclick="
+                
                 openOption();
-                audio.play();
+                audioClick.play();
                 "> OPTION </span> 
              </button>
 
              <button id="startButton" class="quitButton"> 
               <span id="quitButton" onclick="
-              window.close()
-              audio.play();
+              
+              window.close() 
+              audioClick.play();             
               " class="glowStart"> QUIT </span> 
              </button>
         </div>
@@ -77,7 +84,8 @@
    
            
 
-          </div>
+        
+      </div>
 
           <div class="optionTab">
             
@@ -85,14 +93,11 @@
 
             <div class="optionMenu"></div>
             <button class="closeOptionButton" onclick="
+            audioClick.play();
             closeOptionTab()
-            audio.play();
               ">	&#10005; </button>
 
               <input type="range" name="volume" id="vol" class="volumeSlider" value="20">
-              <audio autoplay="" loop class="aud"
-              src="../audio/Infinite-World-chosic.com_.mp3">
-              </audio>
               
               
               <span class="num">20</span> 
@@ -102,53 +107,144 @@
          
       </div>
 
-
-
-      
       <div class="fade">
           <button class="exitStart"  onclick="
-
+            audioClick.play();
             mainMenu();
-            audio.play();
-            
-            
             "  >Main Menu</button>
             <p class="chooseHeroText"> Choose Your Hero</p>
            
-                <img src="Images/reymart.jpg" alt="" class="reymart allPicture" onclick="
-                heroPick('reymart');
-                audio.play();
+                <img src="Images/reymart.jpg" alt="" class="reymart allPicture"  onclick="
+                countDown();
+                audioClick.play();
+                heroPick('reymart');  
+                
+               
               ">
-                <img src="Images/patria.png" alt="" class="patria allPicture" onclick="
-                heroPick('patria');
-                audio.play();
+                <img src="Images/patria.png" alt="" class="patria allPicture"  onclick="
+                countDown();
+                heroPick('patria');  
+                audioClick.play();
               ">
-                <img src="Images/russell.jpg" alt="" class="russell allPicture" onclick="
-                heroPick('russell');
-                audio.play();
+                <img src="Images/russell.jpg" alt="" class="russell allPicture"  onclick="
+                countDown();
+                heroPick('russell');  
+                audioClick.play();
               ">
 
               
       </div>
-
-
-      <div class="heroChosen">
+        
+      <div class="heroChosen">  
 
         <p class="heroPicked"></p>
         <button class="continueButton" onclick="
-        exitChosenHeroText()
-        audio.play();
-        ">Continue</button>
+        exitChosenHeroText();
+        audioClick.play(); 
+          
+        " id="btn" >5</button>
 
       </div>
-</div>
+
+      <div class="heroStats">
+        <div class="pictureOfPickedHero">
+          <img class="statsOfHero1" src="Images/reymart.jpg" alt="reymart">
+          <img class="statsOfHero2" src="Images/patria.png" alt="patria">
+          <img class="statsOfHero3" src="Images/russell.jpg" alt="russell">
+
+
+
+          <div class="inMan">
+            
+          <img  class="scrollBackground" src="Images/scrollBackground.png" alt="">
+           
+           
+              <p class="hero1Stats"><span class="heroNameStats">Indigenous man</span> 
+              
+              <br>Health: 140
+              
+              <br> Power: 50 
+              
+              <br> Armor: 110 <br> 
+              
+              <span class="passive">Passive: Can block Enemy attack after <br> 4 attack</span> 
+              <span class="description1 description">Unknown man A.K.A. The indiginous man is an ogre that have a affections to human, ogre can withstand a high Power Attack. </span> </p>
+
+          </div>
+        
+          <div class="pat">
+            
+            <img  class="scrollBackground" src="Images/scrollBackground.png" alt="">
+             
+             
+                <p class="hero1Stats"><span class="heroNameStats">Double Banger</span> 
+                
+                <br>Health: 100
+                
+                <br> Power: 120
+                
+                <br> Armor: 40 <br> 
+                
+                <span class="passive">Passive: Can become Stealth that can attack randomly chance (40%)</span> 
+                <span class="description2 description">In the world of full of Powers , a man that can confused you , an assasin that can kill you in instant, the tacticians, and have a lust for women in skirts  </span> 
+              </p>
+  
+            </div>
+
+
+            <div class="russ">
+            
+              <img  class="scrollBackground" src="Images/scrollBackground.png" alt="">
+               
+               
+                  <p class="hero1Stats"><span class="heroNameStats">Happy Warrior</span> 
+                  
+                  <br>Health: 115
+                  
+                  <br> Power: 70
+                  
+                  <br> Armor: 80 <br> 
+                  
+                  <span class="passive">Passive: Power Scale's per Round <br> (3 Power) </span> 
+                  <span class="description3 description">A brave warrior who obeyed rules, follow orders, diligent to annoy people and fought in the realms of hell and become a demi-god.  </span> 
+                </p>
+    
+              </div>
+
+        </div>
+      </div>
+
+    </div>
   </div>
   
-  <script src="option.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="option.js"> </script>
    <script src="homePage.js"></script>
   <script src="sounds.js"></script>
   <script src="start.js"></script>
   <script src="heroChoose.js"></script>
-  
+  <script src="stats.js">
+    
+  </script>
+
+
 </body>
 </html>

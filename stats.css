@@ -1,0 +1,75 @@
+.statsOfHero1 ,.statsOfHero2 , .statsOfHero3 {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  margin-top: 60px;
+  cursor: url('curser/clickCurser.png'), auto;
+  visibility: hidden;
+  opacity: 0;
+}.h {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 3s ease;
+}.inMan {
+  opacity: 0;
+  visibility: hidden;
+}.pat {
+  opacity: 0;
+  visibility: hidden;
+}.russ {
+  opacity: 0;
+  visibility: hidden;
+}.hero1Stats ,.hero2Stats , .hero3Stats {
+  position: absolute;
+  top: 25%;
+  left: 33%;
+  font-family: titleFont;
+  font-size: 20px;
+  font-weight: bolder;
+  background-image: url(Images/title\ text\ background.jpg);
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 4px;
+  
+}.hero2Stats {
+
+}.hero3Stats {
+  
+}.description {
+  font-size: 15px;
+  letter-spacing: 0px;
+  position: absolute;
+  color: black;
+  left: 20%;
+  top: 170%;
+  text-align: center;
+  word-wrap: break-word;
+  width: 400px;
+  
+  
+}.description1 {
+  top: 155%;
+}.description2 {
+  top: 150%;
+  left: 17%;
+}.description3 {
+  top: 150%;
+  left: 25%;
+}.heroNameStats {
+  font-weight: 100;
+  
+}.scrollBackground {
+  position: absolute;
+  width: 500px;
+  height: 150px;
+  top: 60%;
+  left: 40%;
+  
+}.statsShow {
+  opacity: 1;
+  transition: opacity 6s;
+  visibility: visible;
+}

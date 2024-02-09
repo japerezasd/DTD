@@ -1,7 +1,7 @@
 function startGame() {
   document.querySelector('.pageBackground').classList.add('pageBackgroundHidden')
   document.querySelector('.fade').classList.add('fadeIn');
-  audio.play();
+ 
 }
 
 

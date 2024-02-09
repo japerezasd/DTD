@@ -1,13 +1,21 @@
-let aud = document.querySelector('.aud');
+let audioMusicBg = document.querySelector('.audioMusicBg');
 let vol = document.querySelector('#vol');
 let num = document.querySelector('.num')
 
-aud.volume= 0.2;
+function preload() {
+  audioMusicBg = loadSound("infinite-World-chosic.com_.mp3")
+}
+
+audioMusicBg.volume= 0.2;
 
 vol.oninput = function(){
-  aud.volume = vol.value/100;
+  audioMusicBg.volume = vol.value/100;
   num.innerHTML=vol.value;
 }
 
-const audio = new Audio();
-audio.src="audio/mixkit-classic-click-1117.wav"
+
+const audioStats = new Audio();
+audioStats.src="audio/match-61050.mp3";
+
+const audioClick = new Audio();
+audioClick.src="audio/mixkit-classic-click-1117.wav";
